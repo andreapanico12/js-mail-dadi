@@ -12,6 +12,23 @@
 
 
 
+const accessList = ['alfredo@gmail.com', 'andrea@gmail.com'];
+let accessMail
+let accessMailValid = false
+let message
+
+while (!accessMailValid){
+  accessMail = prompt('INSERISCI EMAIL');
+  if (accessMail.includes('@')){
+    accessMailValid = true;
+  }
+    
+  else {
+    message = 'Input di email non valido';
+    console.log(message);
+  }
+
+}
 
 
 
