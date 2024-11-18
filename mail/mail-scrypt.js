@@ -30,5 +30,12 @@ while (!accessMailValid){
 
 }
 
+if ( accessList.includes(accessMail) == true){
+  message = 'Puoi accedere';
+  } else if( accessList.includes(accessMail) == false){
+  message = 'Non puoi accedere';
+  }
+  console.log(message);
+
 
 
