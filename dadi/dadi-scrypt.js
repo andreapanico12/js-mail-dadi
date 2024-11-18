@@ -12,6 +12,14 @@
 
 
 
+let message
+
+let dadoGiocatore = Math.floor(Math.random() * 6) + 1;
+console.log(`Questo è il tuo tiro: ${dadoGiocatore}`);
+let dadoComputer = Math.floor(Math.random() * 6) + 1;
+console.log(`Questo è il mio tiro: ${dadoComputer}`);
+
+
 
 
 
