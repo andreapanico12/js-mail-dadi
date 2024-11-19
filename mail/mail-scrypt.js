@@ -30,12 +30,26 @@ while (!accessMailValid){
 
 }
 
-if ( accessList.includes(accessMail) == true){
-  message = 'Puoi accedere';
-  } else if( accessList.includes(accessMail) == false){
-  message = 'Non puoi accedere';
+// if ( accessList.includes(accessMail) == true){
+//   message = 'Puoi accedere';
+//   } else if( accessList.includes(accessMail) == false){
+//   message = 'Non puoi accedere';
+//   }
+//   console.log(message);
+
+// NON AVEVO LETTO IL MESSAGGIO SULLA CHAT GENERAL
+
+let found = false
+for (let i = 0; i < accessList.length; i++) {
+  if (accessList[i] === accessMail) {
+    found = true;
+
   }
-  console.log(message);
+}
 
-
-
+if (found) {
+  message = 'Puoi accedere';
+} else {
+  message = 'Non puoi accedere';
+}
+console.log(message);
